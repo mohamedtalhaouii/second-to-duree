@@ -1,9 +1,9 @@
 S = int(input("Entrer La duree en second : "))
 
-A = S // 60
-H = A // 60
-M = A % 60
-S = M // 60
+H = S // 3600
+A = S % 3600
+M = A // 60
+S = A % 60
 
-print("La duree est", H , ":", M , ":" , S)
+print("La duree est", H , "h :", M , "m :" , S, "s")
     
